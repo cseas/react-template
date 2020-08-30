@@ -1,8 +1,8 @@
 import React from "react";
 import { useSelector, useDispatch } from "react-redux";
-
-import { increment } from "src/actions";
 import { useTranslation } from "react-i18next";
+
+import { counterSlice } from "src/reducers/counter";
 
 type CounterState = {
   counter: any;
@@ -17,7 +17,12 @@ export function App() {
   return (
     <>
       <h1>Counter: {counter}</h1>
-      <button onClick={() => dispatch(increment())}>+</button>
+      <button onClick={() => dispatch(counterSlice.actions.decrement())}>
+        -
+      </button>
+      <button onClick={() => dispatch(counterSlice.actions.increment(5))}>
+        +
+      </button>
 
       <h1>i18n</h1>
       <p>{t("title")}</p>
