@@ -1,8 +1,6 @@
-import React from "react";
-import { useSelector, useDispatch } from "react-redux";
 import { useTranslation } from "react-i18next";
-
-import { counterSlice } from "src/reducers/counter";
+import { useDispatch, useSelector } from "react-redux";
+import { counterSlice } from "./reducers/counter";
 
 type CounterState = {
   counter: any;
