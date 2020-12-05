@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+    "module": "commonjs", // Sets the module system for the program
+    "esModuleInterop": true, // compatibility between different modules
+    "target": "es6", // compiled code format
+    "moduleResolution": "node", // Node.js
+    "noUnusedLocals": true // report errors for unused variables
+  },
+  "include": ["./"] // included files
+}
