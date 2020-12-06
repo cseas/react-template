@@ -1,5 +1,5 @@
 import { configureStore } from "@reduxjs/toolkit";
-import { StrictMode, Suspense } from "react";
+import { StrictMode } from "react";
 import ReactDOM from "react-dom";
 import { Provider } from "react-redux";
 import { App } from "./App";
@@ -15,12 +15,10 @@ const store = configureStore({
 
 ReactDOM.render(
   <StrictMode>
-    <Suspense fallback="Loading">
-      <Provider store={store}>
-        <App />
-      </Provider>
-      <TranslateButtons />
-    </Suspense>
+    <Provider store={store}>
+      <App />
+    </Provider>
+    <TranslateButtons />
   </StrictMode>,
   document.getElementById("root")
 );

@@ -1,5 +1,6 @@
 import express from "express";
 import path from "path";
+import appSettings from "../appsettings.json";
 
 const PORT = process.env.PORT || 3001;
 
@@ -12,6 +13,10 @@ app.get("/ping", function (req: express.Request, res: express.Response) {
 
 app.get("/", function (req: express.Request, res: express.Response) {
   res.sendFile(path.join(__dirname, "../build", "index.html"));
+});
+
+app.get("/data.js", function (req: express.Request, res: express.Response) {
+  res.send(`window.SERVER_DATA=${JSON.stringify(appSettings.clientSettings)}`);
 });
 
 // keep this at the end so it doesn't override other routes

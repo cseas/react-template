@@ -4,7 +4,8 @@
     "esModuleInterop": true, // compatibility between different modules
     "target": "es6", // compiled code format
     "moduleResolution": "node", // Node.js
-    "noUnusedLocals": true // report errors for unused variables
+    "noUnusedLocals": true, // report errors for unused variables
+    "resolveJsonModule": true // enable importing json files
   },
   "include": ["./"] // included files
 }
