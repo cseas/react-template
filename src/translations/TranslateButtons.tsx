@@ -1,4 +1,3 @@
-import React from "react";
 import { useTranslation } from "react-i18next";
 
 export function TranslateButtons() {
@@ -9,9 +8,9 @@ export function TranslateButtons() {
   }
 
   return (
-    <>
+    <div>
       <button onClick={() => changeLanguage("de")}>DE</button>
       <button onClick={() => changeLanguage("en")}>EN</button>
-    </>
+    </div>
   );
 }
