@@ -1,5 +1,6 @@
 import express from "express";
 import path from "path";
+import serialize from "serialize-javascript";
 import appSettings from "../appsettings.json";
 
 const PORT = process.env.PORT || 3001;
@@ -16,7 +17,11 @@ app.get("/", function (req: express.Request, res: express.Response) {
 });
 
 app.get("/data.js", function (req: express.Request, res: express.Response) {
-  res.send(`window.SERVER_DATA=${JSON.stringify(appSettings.clientSettings)}`);
+  res.send(
+    `window.SERVER_DATA=${serialize(appSettings.clientSettings, {
+      isJSON: true,
+    })}`
+  );
 });
 
 // keep this at the end so it doesn't override other routes
