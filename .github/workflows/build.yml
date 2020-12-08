@@ -32,5 +32,8 @@ jobs:
       - name: Evaluate code quality
         run: npm run prettier
 
+      - name: Run tests
+        run: npm test
+
       - name: Create project build
         run: npm run build --if-present

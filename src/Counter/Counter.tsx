@@ -1,5 +1,5 @@
 import { useDispatch, useSelector } from "react-redux";
-import { counterSlice } from "../reducers/counter";
+import { counterSlice } from "../reducers";
 
 type CounterState = {
   counter: number;
@@ -11,7 +11,8 @@ export function Counter() {
 
   return (
     <>
-      <h1>Counter: {counter}</h1>
+      <h1>Global state</h1>
+      <p>Counter: {counter}</p>
       <button onClick={() => dispatch(counterSlice.actions.decrement())}>
         -
       </button>

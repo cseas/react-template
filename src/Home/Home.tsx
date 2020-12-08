@@ -11,7 +11,7 @@ export function Home() {
 
   return (
     <>
-      <h1>i18n</h1>
+      <h1>Translations</h1>
       <p>{t("title")}</p>
     </>
   );
