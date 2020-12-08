@@ -12,8 +12,12 @@ The below table explains why certain dependencies are required by the project in
 
 ## Dev Dependencies
 
-| Package name              | Purpose                          |
-| ------------------------- | -------------------------------- |
-| @types/jest               | Required for `expect()` in tests |
-| @testing-library/jest-dom | Required for tests setup         |
-| @testing-library/react    | Required for writing tests       |
+| Package name                | Purpose                                      |
+| --------------------------- | -------------------------------------------- |
+| @types/jest                 | Required for `expect()` in tests             |
+| @testing-library/jest-dom   | Required for tests setup                     |
+| @testing-library/react      | Required for writing tests                   |
+| @testing-library/user-event | Simulating user events for testing           |
+| @testing-library/dom        | Required by [@testing-library/user-event][1] |
+
+[1]: https://github.com/testing-library/user-event#installation

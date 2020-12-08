@@ -10,11 +10,12 @@ This minimal repo demonstrates usage of React with Express, covering common use 
 - Injecting server data - [express][6]
 - Route-based code-splitting - [react-router-dom][7]
 - Error Boundary in typescript - [react][8]
-- Creating REST APIs - Express
-- Routing - React Router
-- GraphQL APIs - Apollo
-- Absolute paths - Create React App
+- Creating REST APIs - [express][9]
 - Unit testing - Jest
+- Server-side logging - winston? morgan? elasticsearch?
+- Performance testing - web-vitals?
+- Auth - express? jwt?
+- GraphQL APIs - Apollo? react-query?
 
 [1]: https://redux-toolkit.js.org/introduction/quick-start
 [2]: https://react.i18next.com/latest/usetranslation-hook
@@ -24,3 +25,4 @@ This minimal repo demonstrates usage of React with Express, covering common use 
 [6]: https://github.com/facebook/create-react-app/issues/1703#issuecomment-309016124
 [7]: https://reactjs.org/docs/code-splitting.html#route-based-code-splitting
 [8]: https://stackoverflow.com/questions/63916900/how-to-properly-type-a-react-errorboundary-class-component-in-typescript
+[9]: https://www.robinwieruch.de/node-express-server-rest-api

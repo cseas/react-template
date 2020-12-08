@@ -4,9 +4,10 @@ import serialize from "serialize-javascript";
 import appSettings from "../appsettings.json";
 
 const PORT = process.env.PORT || 3001;
-
 const app = express();
-app.use(express.static(path.join(__dirname, "build")));
+
+// middlewares
+app.use(express.json()); // for parsing POST request body
 
 app.get("/ping", function (req: express.Request, res: express.Response) {
   return res.send("pong");

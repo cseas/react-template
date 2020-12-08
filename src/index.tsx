@@ -1,24 +1,12 @@
-import { configureStore } from "@reduxjs/toolkit";
 import { StrictMode } from "react";
 import ReactDOM from "react-dom";
-import { Provider } from "react-redux";
 import { App } from "./App";
 import "./index.css";
-import { allReducers } from "./reducers";
 import reportWebVitals from "./reportWebVitals";
-import "./translations/i18n";
-import { TranslateButtons } from "./translations/TranslateButtons";
-
-const store = configureStore({
-  reducer: allReducers,
-});
 
 ReactDOM.render(
   <StrictMode>
-    <Provider store={store}>
-      <App />
-    </Provider>
-    <TranslateButtons />
+    <App />
   </StrictMode>,
   document.getElementById("root")
 );
