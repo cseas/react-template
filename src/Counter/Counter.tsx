@@ -1,12 +1,8 @@
 import { useDispatch, useSelector } from "react-redux";
-import { counterSlice } from "../reducers";
-
-type CounterState = {
-  counter: number;
-};
+import { counterSlice, RootState } from "../slices";
 
 export function Counter() {
-  const counter = useSelector((state: CounterState) => state.counter);
+  const counter = useSelector((state: RootState) => state.counter);
   const dispatch = useDispatch();
 
   return (

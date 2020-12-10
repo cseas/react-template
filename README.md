@@ -11,8 +11,8 @@ This minimal repo demonstrates usage of React with Express, covering common use 
 - Route-based code-splitting - [react-router-dom][7]
 - Error Boundary in typescript - [react][8]
 - Creating REST APIs - [express][9]
-- Unit testing - Jest
-- Server-side logging - winston? morgan? elasticsearch?
+- Unit testing - [@testing-library/react][10]
+- Server-side logging - [morgan][11]
 - Performance testing - web-vitals?
 - Auth - express? jwt?
 - GraphQL APIs - Apollo? react-query?
@@ -26,3 +26,5 @@ This minimal repo demonstrates usage of React with Express, covering common use 
 [7]: https://reactjs.org/docs/code-splitting.html#route-based-code-splitting
 [8]: https://stackoverflow.com/questions/63916900/how-to-properly-type-a-react-errorboundary-class-component-in-typescript
 [9]: https://www.robinwieruch.de/node-express-server-rest-api
+[10]: https://testing-library.com/docs/example-codesandbox
+[11]: https://github.com/expressjs/morgan#examples
