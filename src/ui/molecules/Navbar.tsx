@@ -13,6 +13,9 @@ export function Navbar() {
         <li>
           <Link to="/counter">Counter</Link>
         </li>
+        <li>
+          <Link to="/user">User</Link>
+        </li>
       </ul>
     </nav>
   );
