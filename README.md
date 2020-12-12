@@ -14,7 +14,7 @@ This minimal repo demonstrates usage of React with Express, covering common use 
 - Unit testing - [@testing-library/react][10]
 - Server-side logging - [morgan][11]
 - Async data fetching with global cache - [react-query][12]
-- Performance testing - web-vitals?
+- Performance testing - [web-vitals][13], [lighthouse][14]
 - Auth - express? jwt?
 
 [1]: https://redux-toolkit.js.org/introduction/quick-start
@@ -29,3 +29,5 @@ This minimal repo demonstrates usage of React with Express, covering common use 
 [10]: https://testing-library.com/docs/example-codesandbox
 [11]: https://github.com/expressjs/morgan#examples
 [12]: https://react-query.tanstack.com/docs/quick-start
+[13]: https://create-react-app.dev/docs/measuring-performance/
+[14]: https://web.dev/lighthouse-performance/
