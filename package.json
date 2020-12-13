@@ -10,7 +10,9 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "prettier": "prettier --check \"{public,src}/**/*.{js,jsx,ts,tsx,json,yml,md,mdx}\"",
-    "prettier:fix": "prettier --write \"{public,src}/**/*.{js,jsx,ts,tsx,json,yml,md,mdx}\""
+    "prettier:fix": "prettier --write \"{public,src}/**/*.{js,jsx,ts,tsx,json,yml,md,mdx}\"",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "@types/express": "^4.17.9",
@@ -60,5 +62,6 @@
       "last 1 safari version"
     ]
   },
-  "proxy": "http://localhost:3001"
+  "proxy": "http://localhost:3001",
+  "homepage": "https://www.absingh.com/react-template"
 }
