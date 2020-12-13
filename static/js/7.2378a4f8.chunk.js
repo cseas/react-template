@@ -1,0 +1,2 @@
+(this["webpackJsonpreact-i18next-redux"]=this["webpackJsonpreact-i18next-redux"]||[]).push([[7],{89:function(e,n,t){"use strict";t.r(n),t.d(n,"default",(function(){return i}));var r=t(2);function i(){var e;return Object(r.jsxs)(r.Fragment,{children:[Object(r.jsx)("h1",{children:"Server data"}),Object(r.jsxs)("p",{children:["You are in the ",null===(e=window.SERVER_DATA)||void 0===e?void 0:e.environment," environment"]})]})}}}]);
+//# sourceMappingURL=7.2378a4f8.chunk.js.map
