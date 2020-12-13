@@ -8,7 +8,7 @@ export function TranslateButtons() {
   }
 
   return (
-    <div>
+    <div style={{ display: "flex", justifyContent: "center" }}>
       <button onClick={() => changeLanguage("de")}>DE</button>
       <button onClick={() => changeLanguage("en")}>EN</button>
     </div>

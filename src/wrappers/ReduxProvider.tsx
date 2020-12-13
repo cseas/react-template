@@ -7,10 +7,10 @@ type ReduxProviderProps = {
   children?: ReactNode;
 };
 
-export function ReduxProvider(props: ReduxProviderProps) {
-  const store = configureStore({
-    reducer: rootReducer,
-  });
+export const store = configureStore({
+  reducer: rootReducer,
+});
 
+export function ReduxProvider(props: ReduxProviderProps) {
   return <Provider store={store}>{props.children}</Provider>;
 }

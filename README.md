@@ -2,7 +2,7 @@
 
 This minimal repo demonstrates usage of React with Express, covering common use cases. The following scenarios are demonstrated:
 
-- Global state - [@reduxjs/toolkit][1]
+- Global client state - [@reduxjs/toolkit][1]
 - Translations - [react-i18next hooks][2]
 - Server side typescript - [ts-node][3]
 - Run scripts simultaneously - [concurrently][4]
@@ -13,9 +13,9 @@ This minimal repo demonstrates usage of React with Express, covering common use 
 - Creating REST APIs - [express][9]
 - Unit testing - [@testing-library/react][10]
 - Server-side logging - [morgan][11]
-- Performance testing - web-vitals?
+- Async data fetching with global cache - [react-query][12]
+- Performance testing - [web-vitals][13], [lighthouse][14]
 - Auth - express? jwt?
-- GraphQL APIs - Apollo? react-query?
 
 [1]: https://redux-toolkit.js.org/introduction/quick-start
 [2]: https://react.i18next.com/latest/usetranslation-hook
@@ -28,3 +28,6 @@ This minimal repo demonstrates usage of React with Express, covering common use 
 [9]: https://www.robinwieruch.de/node-express-server-rest-api
 [10]: https://testing-library.com/docs/example-codesandbox
 [11]: https://github.com/expressjs/morgan#examples
+[12]: https://react-query.tanstack.com/docs/quick-start
+[13]: https://create-react-app.dev/docs/measuring-performance/
+[14]: https://web.dev/lighthouse-performance/

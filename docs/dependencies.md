@@ -12,6 +12,8 @@ The below table explains why certain dependencies are required by the project in
 
 ## Dev Dependencies
 
+Since the `react-scripts` build is served using an Express server, any module which is not directly required by the server is a dev dependency.
+
 | Package name                | Purpose                                      |
 | --------------------------- | -------------------------------------------- |
 | @types/jest                 | Required for `expect()` in tests             |
