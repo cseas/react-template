@@ -16,9 +16,6 @@ export function Navbar() {
         <li>
           <Link to="/user">User</Link>
         </li>
-        <li>
-          <Link to="/photo">Photo</Link>
-        </li>
       </ul>
     </nav>
   );
