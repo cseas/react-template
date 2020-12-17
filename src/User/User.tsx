@@ -11,7 +11,7 @@ export function User() {
 
   return (
     <>
-      <h2>Async API call stored to cache</h2>
+      <h2>Async API call stored to cache - Global server state</h2>
 
       {userQuery.isFetching ? (
         <div>Loading</div>

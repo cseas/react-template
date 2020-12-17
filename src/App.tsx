@@ -15,6 +15,7 @@ const Home = lazy(() => import("./Home"));
 const Login = lazy(() => import("./Login"));
 const Counter = lazy(() => import("./Counter"));
 const User = lazy(() => import("./User"));
+const Photo = lazy(() => import("./Photo"));
 
 declare global {
   interface Window {
@@ -36,6 +37,7 @@ export function App() {
                   <Route exact path="/login" component={Login} />
                   <Route exact path="/counter" component={Counter} />
                   <Route exact path="/user" component={User} />
+                  <Route exact path="/photo" component={Photo} />
                 </Switch>
               </Suspense>
             </Router>
