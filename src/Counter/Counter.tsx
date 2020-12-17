@@ -7,7 +7,7 @@ export function Counter() {
 
   return (
     <>
-      <h1>Global state</h1>
+      <h1>Global client state</h1>
       <p>Counter: {counter}</p>
       <button onClick={() => dispatch(counterSlice.actions.decrement())}>
         -
