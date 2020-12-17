@@ -15,7 +15,6 @@ This minimal repo demonstrates usage of React with Express, covering common use 
 - Server-side logging - [morgan][11]
 - Async data fetching with global cache - [react-query][12]
 - Performance testing - [web-vitals][13], [lighthouse][14]
-- GraphQL - [apollo]
 - Auth - express? jwt?
 
 [1]: https://redux-toolkit.js.org/introduction/quick-start
