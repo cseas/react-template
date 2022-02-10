@@ -1,6 +1,6 @@
 # react-template
 
-This minimal repo demonstrates usage of React with Express, covering common use cases. The following scenarios are demonstrated:
+This minimal repo demonstrates usage of Create React App with Express, covering common use cases. The following scenarios are demonstrated:
 
 - Global client state - [@reduxjs/toolkit][1]
 - Translations - [react-i18next hooks][2]

@@ -1,5 +1,5 @@
 import { lazy, Suspense } from "react";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { Navbar } from "./ui";
 import {
   ErrorBoundary,
@@ -28,17 +28,17 @@ export function App() {
       <ReduxProvider>
         <QueryCacheProvider>
           <TranslationsWrapper>
-            <Router>
+            <BrowserRouter>
               <Navbar />
               <Suspense fallback={<div>"Loading.."</div>}>
-                <Switch>
-                  <Route exact path="/" component={Home} />
-                  <Route exact path="/login" component={Login} />
-                  <Route exact path="/counter" component={Counter} />
-                  <Route exact path="/user" component={User} />
-                </Switch>
+                <Routes>
+                  <Route path="/" element={<Home />} />
+                  <Route path="login" element={<Login />} />
+                  <Route path="counter" element={<Counter />} />
+                  <Route path="user" element={<User />} />
+                </Routes>
               </Suspense>
-            </Router>
+            </BrowserRouter>
           </TranslationsWrapper>
         </QueryCacheProvider>
       </ReduxProvider>
